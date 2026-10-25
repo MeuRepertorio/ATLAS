@@ -1,1 +1,11 @@
-{"version":1,"sections":[]}
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "Laboratório Integrado",
+      "summary": "Uma aplicação concreta para conectar Ética, Legislação, Logística e Modelo de Negócio.",
+      "path": "abalion/pages/laboratorio-integrado.html",
+      "created_at": "2026-10-25"
+    }
+  ]
+}
