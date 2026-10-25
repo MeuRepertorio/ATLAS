@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e1d">
+  <meta name="description" content="Atlas de estudos: Ética, Legislação, Logística e Desenvolvimento de Modelo de Negócio. Biblioteca interativa com 27 capítulos, exemplos, conceitos, exercícios e fontes.">
+  <title>ATLAS | Quatro áreas do conhecimento</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="side" id="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="ATLAS, início"><span class="brand-icon"><span></span><span></span><span></span><span></span></span><span class="brand-name">ATLAS <small>ESTUDOS INTEGRADOS</small></span></a>
+      <div class="side-label">EXPLORAR</div>
+      <nav class="side-nav">
+        <a class="nav-item active" href="#inicio"><span class="nav-symbol">⌂</span> Visão geral</a>
+        <a class="nav-item" href="#materias"><span class="nav-symbol">▦</span> Quatro conteúdos</a>
+        <a class="nav-item" href="#biblioteca"><span class="nav-symbol">▤</span> Biblioteca</a>
+        <a class="nav-item" href="#conexoes"><span class="nav-symbol">◇</span> Conexões</a>
+        <a class="nav-item" href="#pratica"><span class="nav-symbol">◎</span> Exercícios</a>
+        <a class="nav-item" href="#fontes"><span class="nav-symbol">⌁</span> Fontes e método</a>
+      </nav>
+      <div class="side-label" style="margin-top:33px">AS QUATRO ÁREAS</div>
+      <div class="side-subjects">
+        <button class="side-subject" data-subject="etica"><span class="subject-dot coral"></span>Ética</button>
+        <button class="side-subject" data-subject="leg"><span class="subject-dot blue"></span>Legislação</button>
+        <button class="side-subject" data-subject="log"><span class="subject-dot green"></span>Logística</button>
+        <button class="side-subject" data-subject="dmn"><span class="subject-dot purple"></span>Modelo de negócio</button>
+      </div>
+      <div class="side-footer"><span class="live-point"></span> BIBLIOTECA ATIVA <small>26 OUTUBRO 2026 · VERSÃO DE ESTUDO</small></div>
+    </aside>
+    <div class="main-wrap">
+      <header class="topbar">
+        <button class="icon-btn menu-trigger" id="mobileMenu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <div class="top-location"><span class="crumb">CONHECIMENTO</span><span class="crumb-div">/</span><strong>Atlas integrado</strong></div>
+        <div class="top-actions">
+          <div class="search-wrap"><span class="search-icon">⌕</span><input id="siteSearch" type="search" autocomplete="off" aria-label="Pesquisar no atlas" placeholder="Buscar em todo o conteúdo..."><kbd>/</kbd><div class="search-results" id="searchResults" role="status" aria-live="polite" hidden></div></div>
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema" title="Alternar visual">◐</button>
+        </div>
+      </header>
+      <main>
+        <section id="inicio" class="hero section-shell">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="mini-line"></span>CADERNO DE ESTUDOS • QUATRO ÁREAS, UMA VISÃO</div>
+            <h1>Entender mais.<br><span class="display-accent">Conectar melhor.</span></h1>
+            <p class="hero-desc">Um espaço de conhecimento para explorar <strong>Ética, Legislação, Logística</strong> e <strong>Desenvolvimento de Modelo de Negócio</strong>. Leitura aprofundada, casos reais do cotidiano e ideias que se conectam.</p>
+            <div class="hero-ctas"><a class="btn btn-main" href="#materias">Explorar as quatro áreas <span>↗</span></a><a class="btn btn-soft" href="#biblioteca">Entrar na biblioteca <span>→</span></a></div>
+            <div class="hero-meta"><span><i class="meta-line"></i> NAVEGAÇÃO LIVRE</span><span>CONTEÚDO INTERATIVO</span><span>SEM CADASTRO</span></div>
+          </div>
+          <div class="hero-visual reveal" aria-label="Visualização ilustrativa das quatro áreas de conhecimento">
+            <div class="visual-glow"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="orbit-dashed"></div>
+            <div class="orbit-center"><span class="center-figure">A</span><small>ATLAS</small><span>CONHECIMENTO<br>CONECTADO</span></div>
+            <button class="orbit-node orb-etica" data-subject="etica"><span class="node-mark coral">01</span><strong>ÉTICA</strong></button>
+            <button class="orbit-node orb-leg" data-subject="leg"><span class="node-mark blue">02</span><strong>LEGISLAÇÃO</strong></button>
+            <button class="orbit-node orb-log" data-subject="log"><span class="node-mark green">03</span><strong>LOGÍSTICA</strong></button>
+            <button class="orbit-node orb-dmn" data-subject="dmn"><span class="node-mark purple">04</span><strong>DMN</strong></button>
+            <div class="orbit-caption">PERSPECTIVAS INDEPENDENTES. RELAÇÕES REAIS.</div>
+          </div>
+          <div class="hero-stats reveal">
+            <div><strong>04</strong><span>áreas de estudo</span></div><div><strong>27</strong><span>capítulos completos</span></div><div><strong>62</strong><span>perguntas comentadas</span></div><div><strong>20</strong><span>exercícios de revisão</span></div>
+          </div>
+        </section>
+        <section id="materias" class="section-shell section-space">
+          <div class="section-heading reveal"><div><span class="kicker">01 / PANORAMA</span><h2>Quatro formas de compreender o mundo.</h2><p>Explore por tema. Cada área tem conceitos fundamentais, leitura aprofundada, exemplos e verificações de aprendizagem.</p></div><span class="heading-aside">SELECIONE UM CAMPO <span>↘</span></span></div>
+          <div class="subject-cards" id="subjectCards"></div>
+          <div class="principle reveal"><span class="principle-star">✳</span><p><strong>Uma ideia orientadora:</strong> os conteúdos não precisam disputar espaço entre si. A compreensão fica mais sólida quando percebemos como conduta, direitos, processos e inovação se relacionam.</p></div>
+        </section>
+        <section id="biblioteca" class="section-shell section-space library">
+          <div class="section-heading reveal"><div><span class="kicker">02 / BIBLIOTECA</span><h2>Conhecimento em profundidade.</h2><p>Não é um resumo superficial: cada capítulo preserva a explicação, amplia a compreensão pelo exemplo e oferece uma síntese para revisão.</p></div><div class="library-count"><span id="readCount">0</span><small>capítulos marcados como lidos</small></div></div>
+          <div class="library-workspace reveal">
+            <div class="library-rail"><span class="rail-label">ESCOLHA A ÁREA</span><div class="subject-tabs" id="subjectTabs"></div><div class="rail-line"></div><span class="rail-label">ÍNDICE DE CAPÍTULOS</span><div id="chapterIndex" class="chapter-index"></div><div class="rail-tip">Leitura livre. Abra qualquer capítulo e marque como lido para acompanhar sua exploração neste navegador.</div></div>
+            <div class="reading-pane"><div class="reading-head"><span class="reading-overline" id="readingOverline">ÁREA DE ESTUDO</span><h3 id="readingTitle">Ética</h3><p id="readingDescription"></p><div class="topic-chips" id="keyTopics"></div></div><div id="chapterList" class="chapter-list"></div><div class="reading-bottom"><button class="btn btn-soft" id="nextSubject" type="button">Explorar próxima área <span>↗</span></button><span>27 capítulos · conteúdo de estudo</span></div></div>
+          </div>
+        </section>
+        <section id="conexoes" class="section-shell section-space">
+          <div class="section-heading reveal"><div><span class="kicker">03 / VISÃO INTEGRADA</span><h2>Onde as matérias se encontram.</h2><p>A ideia não é misturar conceitos sem critério. É observar como uma decisão pode envolver simultaneamente pessoas, normas, processos e modelo de negócio.</p></div></div>
+          <div class="connection-layout reveal"><div class="connection-map"><div class="connection-ring ring-a"></div><div class="connection-ring ring-b"></div><div class="connection-core">UMA<br>DECISÃO</div><span class="connection-node co-1">ÉTICA</span><span class="connection-node co-2">LEGISLAÇÃO</span><span class="connection-node co-3">LOGÍSTICA</span><span class="connection-node co-4">DMN</span></div><div class="connection-content"><div class="connection-controls" id="connectionControls"></div><article class="connection-detail" id="connectionDetail" aria-live="polite"></article></div></div>
+        </section>
+        <section id="pratica" class="section-shell section-space">
+          <div class="section-heading reveal"><div><span class="kicker">04 / APRENDIZAGEM ATIVA</span><h2>Pensar, aplicar, compreender.</h2><p>Exercícios sem competição, cronômetro ou pontuação: a finalidade é compreender a lógica por trás das respostas.</p></div></div>
+          <div class="practice-grid reveal"><article class="practice-card practice-feature"><div class="practice-tag">EXPLORADOR DE PERGUNTAS</div><h3>Uma pergunta. Uma reflexão.</h3><p>Abra respostas comentadas de diferentes matérias e aprofunde o raciocínio.</p><div class="filter-row" id="questionFilters"></div><div class="question-display" id="questionDisplay"></div><div class="practice-actions"><button class="btn btn-main" type="button" id="revealAnswer">Ler explicação</button><button class="btn btn-quiet" type="button" id="newQuestion">Outra pergunta →</button></div></article><article class="practice-card practice-quiz"><div class="practice-tag">SITUAÇÕES DO COTIDIANO</div><h3>Qual é o melhor caminho?</h3><p>Escolha uma interpretação e veja os fundamentos da resposta.</p><div id="caseDisplay"></div><button class="btn btn-soft" type="button" id="nextCase">Novo caso →</button></article></div>
+          <div class="reflection-workspace reveal"><div class="reflection-intro"><span class="kicker">REVISÃO COMENTADA / 20 QUESTÕES</span><h3>Verificar uma ideia, entender o motivo.</h3><p>Escolha sua interpretação e leia a justificativa. Sem nota, sem pressa e sem comparação.</p><div class="reflection-controls"><label for="reflectionScope">Área da revisão</label><select id="reflectionScope"><option value="all">Todas as matérias</option><option value="etica">Ética</option><option value="leg">Legislação</option><option value="log">Logística</option><option value="dmn">DMN</option></select></div></div><div class="reflection-body"><div id="reflectionCard"></div><button type="button" class="btn btn-soft" id="nextReflection">Outra questão <span>→</span></button></div></div>
+          <div class="practice-extra reveal"><div class="practice-extra-title"><span class="kicker">CONCEITOS DE CONSULTA</span><h3>Glossário essencial</h3><p>Termos que vale compreender antes de avançar nos capítulos.</p></div><div id="glossaryGrid" class="glossary-grid"></div></div>
+        </section>
+        <section id="fontes" class="section-shell section-space sources-section">
+          <div class="section-heading reveal"><div><span class="kicker">05 / REFERÊNCIAS E MÉTODO</span><h2>Estudar também é saber de onde vêm as ideias.</h2><p>O conteúdo de aula e as normas oficiais são apresentados com identificações diferentes, para não confundir explicação didática com texto legal.</p></div></div>
+          <div class="source-columns reveal"><div class="source-panel"><div class="source-panel-label"><span class="source-icon">I</span><div><h3>Fontes oficiais para consulta</h3><p>Legislação e apoio institucional, com links de acesso.</p></div></div><div id="officialSources" class="source-links"></div></div><div class="source-panel"><div class="source-panel-label"><span class="source-icon">II</span><div><h3>Materiais-base de estudo</h3><p>13 documentos didáticos utilizados na organização do conteúdo.</p></div></div><div id="manualSources" class="manual-sources"></div></div></div>
+          <div class="method-note reveal"><h3>Nota metodológica</h3><p>As explicações são reorganizadas a partir dos materiais didáticos anteriormente disponibilizados para as quatro áreas. Os links oficiais foram acrescentados para conferência de regras e conceitos. Os documentos didáticos originais não estão publicados neste site. As situações e conexões são exercícios pedagógicos ilustrativos, não pareceres jurídicos nem situações reais verificadas.</p><span>Pesquisa e organização de estudo · 25 outubro de 2026</span></div>
+        </section>
+        <footer class="footer section-shell"><a href="#inicio" class="brand footbrand"><span class="brand-icon"><span></span><span></span><span></span><span></span></span><span class="brand-name">ATLAS <small>ESTUDOS INTEGRADOS</small></span></a><p>Ética · Legislação · Logística · Desenvolvimento de Modelo de Negócio</p><a href="#inicio" class="backtop">Voltar ao início ↑</a></footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
